@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Tender.pro</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container flex">
+        <a href="/">
+            <img alt="logo" class="logo" src="images/logo.svg">
+        </a>
+        <nav class="header__nav">
+            <button class="btn header__btn"><span data-value="input">Log in</span></button>
+            <div class="usd-item-value">1 &#36; = <span data-value="USD"></span> &#8381;</div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="overlay">
+            <div class="modal">
+                <form class="modal__form">
+                    <input class="modal__input" id="name" name="name" placeholder="example" type="text">
+                    <label class="modal__label" for="name">Name</label>
+                    <button class="btn modal__sign-in"><span>Sign in</span></button>
+                    <button class="btn modal__close"><span>Cancel</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/fetch.js"></script>
+</body>
+</html>
